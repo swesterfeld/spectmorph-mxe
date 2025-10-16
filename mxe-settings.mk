@@ -3,6 +3,6 @@ MXE_TARGETS=x86_64-w64-mingw32.static
 MXE_PLUGIN_DIRS=plugins/gcc14
 JOBS=32
 
-LOCAL_PKG_LIST := libsndfile glib libao cairo fftw
+LOCAL_PKG_LIST := lame flac ogg vorbis opus glib libao cairo fftw
 .DEFAULT_GOAL  := local-pkg-list
 local-pkg-list: $(LOCAL_PKG_LIST)
